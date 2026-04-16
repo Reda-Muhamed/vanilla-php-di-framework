@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace HTTP;
 
-class RequestHelper
+class Request
 {
+    public function __construct() {}
 
-    public static function getJsonData(): array
+    public function getJsonData(): array
     {
         // Read the raw stream from the request body
         $rawBody = file_get_contents('php://input');

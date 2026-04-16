@@ -6,12 +6,13 @@ namespace Controllers;
 
 use Repositories\AppointmentRepository;
 use Domain\Appointment;
+use HTTP\Request;
 use HTTP\Response;
 use Repositories\UserRepository;
 
 class AppointmentController
 {
-    public function __construct(private AppointmentRepository $appointmentRepo, private UserRepository $userRepo) {}
+    public function __construct(private AppointmentRepository $appointmentRepo, private UserRepository $userRepo, private Request $request) {}
 
     public function index()
     {
@@ -31,8 +32,7 @@ class AppointmentController
     {
         $user = $_SERVER['AUTHENTICATED_USER'];
         $userId = $this->userRepo->findByEmail($user['email'])->id;
-
-        $data = json_decode(file_get_contents("php://input"), true);
+        $data = $this->request->getJsonData();
 
         if (empty($data['appointment_date'])) {
             Response::json(['error' => 'Appointment date is required'], 400);

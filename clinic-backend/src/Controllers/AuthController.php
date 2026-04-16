@@ -5,18 +5,18 @@ declare(strict_types=1);
 namespace Controllers;
 
 use Domain\User;
+use HTTP\Request;
 use HTTP\Response;
 use Repositories\UserRepository;
-use Repositories\AppointmentRepository;
 use Security\JwtHelper;
 
 class AuthController
 {
-    public function __construct(private UserRepository $userRepo) {}
+    public function __construct(private UserRepository $userRepo, private Request $request) {}
 
     public function login()
     {
-        $data = json_decode(file_get_contents('php://input'), true);
+        $data = $this->request->getJsonData();
         $email = $data['email'] ?? '';
         $password = $data['password'] ?? '';
         if (!$email || !$password) {
