@@ -1,0 +1,17 @@
+# Development Files
+.env
+.env.backup
+.env.production
+
+# Dependencies
+vendor/
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp

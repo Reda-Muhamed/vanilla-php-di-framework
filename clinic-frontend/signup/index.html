@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Clinic Management System</title>
+    <link href="../css/signup.css" rel="stylesheet" />
+    <script src="../js/auth.js" defer></script>
+  </head>
+  <body>
+    <div class="auth-container">
+      <h1>Sign Up for Clinic</h1>
+      
+      <form id="signupForm">
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        
+        <div id="errorMessage" class="alert-message"></div>
+        
+        <button type="submit">Sign up</button>
+      </form>
+      
+      <p class="auth-link">Already have an account? <a href="../login/index.html">Login here</a></p>
+    </div>
+  </body>
+</html>

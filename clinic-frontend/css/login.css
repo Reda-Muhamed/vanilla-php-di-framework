@@ -1,0 +1,110 @@
+
+:root {
+    --primary-color: #0056b3;    
+    --secondary-color: #007bff;    
+    --bg-color: #f0f4f8;         
+    --surface-color: #ffffff;    
+    --text-color: #333333;        
+    --text-light: #6c757d;       
+    --border-color: #e2e8f0;     
+    --danger-color: #dc3545;     
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+* { 
+    margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.auth-container {
+    background-color: var(--surface-color);
+    width: 100%;
+    max-width: 400px; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.input-group { margin-bottom: 20px; }
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8fafc;
+    transition: var(--border-color) 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+button {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover { background-color: var(--primary-color); }
+
+.auth-link {
+    margin-top: 20px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.auth-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-link a:hover { text-decoration: underline; }
+
+.alert-message {
+    display: none; 
+    color: var(--danger-color);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}

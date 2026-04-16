@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <script src="../js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      
+      <header class="dashboard-header">
+        <h2>My Dashboard</h2>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+      </header>
+
+      <section class="dashboard-section">
+        <h3>Book New Appointment</h3>
+        <form id="bookingForm">
+          <div class="input-group">
+            <label for="appointment_date">Date & Time</label>
+            <input type="datetime-local" id="appointment_date" required />
+          </div>
+          
+          <div class="input-group">
+            <label for="notes">Notes (Optional)</label>
+            <textarea id="notes" rows="2" placeholder="Any symptoms or questions?"></textarea>
+          </div>
+          
+          <div id="bookingMessage" class="alert-message"></div>
+          
+          <button type="submit" class="primary-btn">Book Appointment</button>
+        </form>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section class="dashboard-section">
+        <h3>My Appointments</h3>
+        <table id="appointmentsTable">
+          <thead>
+            <tr>
+              <th>Date & Time</th>
+              <th>Status</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody id="appointmentsBody">
+            <tr>
+              <td colspan="3" class="text-center">Loading appointments...</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+    </div>
+  </body>
+</html>

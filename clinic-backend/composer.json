@@ -1,0 +1,17 @@
+{
+    "name": "reda2/backend",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Reda",
+            "email": "reda.mohamed.reda.201@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
