@@ -1,5 +1,3 @@
-
-```markdown
 # Native PHP Clinic Architecture 
 
 A full-stack Clinic Management System built from scratch without any major frameworks. This project serves as a practical demonstration of **Clean Architecture**, **SOLID principles**, and **Design Patterns** using Native PHP 8 and Vanilla JavaScript.
@@ -45,4 +43,3 @@ Unlike typical beginner projects, this application implements enterprise-level p
 
 Developed by **Reda Mohamed**.
 I am a Computer Science student with a strong passion for backend engineering, problem-solving, and contributing to open-source projects. I focus on building scalable systems, high-concurrency architectures, and mastering the fundamentals "under the hood" before relying on frameworks. 
-```
