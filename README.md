@@ -12,14 +12,14 @@ Unlike typical beginner projects, this application implements enterprise-level p
 * **Custom Routing Engine:** A lightweight, middleware-supported router to handle HTTP requests.
 * **Secure Authentication:** Implements custom JWT generation and verification, securely storing tokens in `HttpOnly` Cookies with `SameSite=Lax` to prevent XSS and CSRF attacks.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Backend:** Native PHP 8.1+ (Strict Typing, Enums, Constructor Property Promotion)
 * **Database:** MySQL (using PDO with Prepared Statements)
 * **Frontend:** Vanilla JavaScript (ES6+), HTML5, CSS3 (Custom Variables, Flexbox)
 * **Communication:** Fetch API (AJAJ/AJAX) with secure credential inclusion.
 
-## ⚙️ How to Run Locally
+##  How to Run Locally
 
 ### 1. Database Setup
 1. Create a MySQL database named `clinic_db`.
@@ -39,7 +39,7 @@ Unlike typical beginner projects, this application implements enterprise-level p
 2. Ensure the `API_BASE_URL` in `js/auth.js` and `js/app.js` points to `http://localhost:9000`.
 3. Serve the frontend using an extension like VS Code Live Server (usually runs on port 5500).
 
-## 👨‍💻 About the Developer
+##  About the Developer
 
 Developed by **Reda Mohamed**.
 I am a Computer Science student with a strong passion for backend engineering, problem-solving, and contributing to open-source projects. I focus on building scalable systems, high-concurrency architectures, and mastering the fundamentals "under the hood" before relying on frameworks. 
